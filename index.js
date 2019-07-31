@@ -8,14 +8,14 @@ const log = console.log;
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL || 'agweraenock76@gmail.com', 
-        pass: process.env.PASSWORD || 'agwenchez'
+        user: process.env.EMAIL || 'youremail@gmail.com', 
+        pass: process.env.PASSWORD || 'yourpassword'
     }
 });
 
 let mailOptions = {
-    from: 'agweraenock76@gmail.com', 
-    to: 'agwenchezpoetry@gmail.com',
+    from: 'youremail@gmail.com', 
+    to: ' destination@gmail.com',
     subject: 'Agwenchez kwenye programming',
     text: 'this thing has to work, hatutaki mchezo!!'
 };
